@@ -5,12 +5,20 @@ public static void main(String[]args)
 int n=12321;
 int res=0;
 int rem ;
+int temp=n;
 while(n!=0)
 {
 rem=n%10;
 res=res*10+rem;
 n=n/10;
 }
-System.out.println(res);
+if(res==temp)
+{
+System.out.println(temp+" palindrome");
+}
+else
+{
+System.out.println(temp+" not a palindrome");
+}
 }
 }
